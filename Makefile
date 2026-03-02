@@ -1,4 +1,4 @@
-all: run
+all: run_main
 
 test_tree.exe: test_tree.o tree.o
 	gcc test_tree.o tree.o -o test_tree.exe
@@ -15,7 +15,7 @@ main.exe: main.o
 main.o: main.c tree.h
 	gcc -c main.c -o main.o
 
-run: test_tree.exe
+run_test: test_tree.exe
 	./test_tree.exe
 
 run_main: main.exe
