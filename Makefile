@@ -1,4 +1,4 @@
-all: run_main
+all: build run_main 
 
 test_tree.exe: test_tree.o tree.o
 	gcc test_tree.o tree.o -o test_tree.exe
@@ -25,4 +25,4 @@ build: test_tree.exe
 	@echo "The assembly is completed"
 
 clean:
-	rm -f *.o test_tree.exe
+	del -f *.o main.exe test_tree.exe

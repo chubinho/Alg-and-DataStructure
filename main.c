@@ -6,6 +6,7 @@
 void print_help()
 {
     printf("Commands:\n");
+    printf("0.create tree");
     printf("1.insert");
     printf("2.remove");
     printf("3.print");
