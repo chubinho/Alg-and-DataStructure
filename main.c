@@ -6,14 +6,13 @@
 void print_help()
 {
     printf("Commands:\n");
-    printf("0.create tree");
-    printf("1.insert");
-    printf("2.remove");
-    printf("3.print");
-    printf("4.degree");
-    printf("5.free");
-    printf("6.exit");
-    printf("7.help");
+    printf("1.insert\n");
+    printf("2.remove\n");
+    printf("3.print\n");
+    printf("4.degree\n");
+    printf("5.free\n");
+    printf("6.exit\n");
+    printf("7.help\n");
 }
 
 int main()
@@ -21,6 +20,7 @@ int main()
     Node *root = NULL;
     char command[50];
     int value;
+    print_help();
     while (1)
     {
         printf("> ");
