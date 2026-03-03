@@ -71,6 +71,7 @@ test5_degree_tree(){
     root = insert(root,6);
     assert(getTreeDegree(root) == 2);
     
+    freeTree(root);
 }
 
 bool all_tests()
